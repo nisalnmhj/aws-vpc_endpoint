@@ -31,6 +31,7 @@ With the access keys set up, I used the EC2 instance to view and interact with f
 
 ## Architecture set up
 I started my project by launching an EC2 instance named "Instance - NextWork VPC Endpoints" inside a VPC. I also set up a S3 bucket named "nextwork-vpc-endpoints-nis" and uploaded few files.
+![S3bucket files](Screenshot%202024-08-22%20213928.png)
 
 ## Access keys
 ### Credentials
@@ -44,6 +45,7 @@ The command I ran was "aws s3 ls". This command is used to list all the files in
 ## Uploading objects to S3
 To upload a new file to my bucket, I first ran the command sudo touch /tmp/nextwork.txt. This command creates file named nextwork which is a text file. The second command I ran was 'aws s3 cp /tmp/nextwork.txt s3://nextworkvpcproject-nis'. This command will copy file to the path mentioned. The third command I ran was 'aws s3 ls s3://nextwork-vpc-project-nis' whichvalidated that I sucessfully copied the file to the path 
  mentioned.
+
 
 ## In the second part of my project...
 ### Step 5  Set up a Gateway
